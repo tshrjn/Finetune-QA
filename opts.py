@@ -14,10 +14,12 @@ def get_args():
     data_args.add_argument('--percent', type=int, default=100, help='Data% to train')
 
     model_args = parser.add_argument_group('Model related arguments')
-    model_args.add_argument('--qa_model', type=str, default='distilroberta-base',
-                            choices=['roberta-base', 'roberta-large',
-                            'distilroberta-base','distilroberta-base'],
+    model_args.add_argument('--qa_model', type=str, default='deepset/roberta-base-squad2',
                             help='Model name')
+    # Model Choices:
+    # QA layer pre-finetuned: https://huggingface.co/models?filter=pytorch,question-answering&search=bert
+    # Commonly used: twmkn9/distilroberta-base-squad2, deepset/roberta-base-squad2
+    # Finetune QA layer from scratch: roberta-base, roberta-large, distilroberta-base, distilroberta-base
 
 
     misc_args = parser.add_argument_group('Logging related & Misc arguments')

@@ -7,7 +7,7 @@ class QAModel(pl.LightningModule):
     def __init__(self, hparams):
         super().__init__()
         self.hparams = hparams
-        self.model = tfs.RobertaForQuestionAnswering.from_pretrained(hparams.qa_model)
+        self.model = tfs.AutoModelForQuestionAnswering.from_pretrained(hparams.qa_model)
 
     def forward(self, x):
         return self.model(**x)
