@@ -4,9 +4,11 @@ BERT, RoBERTa fine-tuning over SQuAD Dataset using pytorch-lighting, transformer
 Example Usage:
 `python main.py --gpus 1, --workers 20 --bs 5 --max_epochs 10`
 
-# Features
-* Pytorch-Lightning Goodies
-    * All args from the trainer
+### Features
+* ⚡️Pytorch-Lightning: Goodies
+    * All `Trainer` flags as args
     * Multi-GPU support
-* Huggingface Tramsformer easy plug-n-play
-* Huggingface NLP Dataset easy data handling
+* 🤗 Transformer: easy plug-n-play
+* 🤗 NLP Dataset: easy data handling
+
+### TODO:
