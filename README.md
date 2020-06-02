@@ -2,7 +2,13 @@
 BERT, RoBERTa fine-tuning over SQuAD Dataset using pytorch-lighting, transformers & nlp.
 
 Example Usage:
-`python main.py --gpus 1, --workers 20 --bs 5 --max_epochs 10`
+`python main.py --gpus 1, --qa_model distilroberta-base --workers 20 --bs 5 --max_epochs 10`
+
+### Install
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Features
 * ⚡️Pytorch-Lightning: Goodies
