@@ -18,7 +18,7 @@ def experiment(args):
     qa_model = models.QAModel(hparams=args)
     train_dl, valid_dl, test_dl = data.prepare_data(args)
 
-    wandb_logger = WandbLogger(project='qa', entity='nlp', tags=args.tags, offline=args.fast_dev_run)
+    wandb_logger = WandbLogger(project='qa', tags=args.tags, offline=args.fast_dev_run)
     wandb_logger.watch(qa_model, log='all')
     args.logger = wandb_logger
 
