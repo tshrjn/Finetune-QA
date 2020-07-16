@@ -6,7 +6,7 @@ BERT, RoBERTa fine-tuning over SQuAD Dataset using pytorch-lighting, transformer
 Example Usage:
 `python main.py --gpus 1, --qa_model distilroberta-base --workers 20 --bs 5 --max_epochs 10`
 
-A Useful WANDB environment variables:
+Few Useful WANDB environment variables:
 ```
 WANDB_MODE=dryrun
 WANDB_ENTITY=nlp
