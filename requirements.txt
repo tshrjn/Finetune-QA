@@ -1,5 +1,5 @@
 pytorch_lightning==0.7.6
-numpy==1.18.1
+numpy==1.22.0
 nlp==0.2.0
 transformers==2.10.0
 torch==1.5.0
